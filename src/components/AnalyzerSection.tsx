@@ -121,6 +121,7 @@ const AnalyzerSection = () => {
               )}
             </Button>
           </div>
+          </div>
         </div>
 
         {/* Result Card */}
