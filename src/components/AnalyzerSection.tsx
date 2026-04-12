@@ -60,7 +60,39 @@ const AnalyzerSection = () => {
           Enter any text below and our AI will classify it instantly.
         </p>
 
-        <div className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-glow">
+        <div className="relative">
+          {/* Background offensive words */}
+          <div className="absolute inset-0 -m-6 pointer-events-none select-none overflow-hidden rounded-3xl" aria-hidden="true">
+            {[
+              { text: "h*a*t*e", top: "5%", left: "2%", rotate: "-12deg" },
+              { text: "s*t*u*p*i*d", top: "8%", right: "3%", rotate: "8deg" },
+              { text: "i*d*i*o*t", bottom: "30%", left: "1%", rotate: "-6deg" },
+              { text: "d*u*m*b", top: "40%", right: "1%", rotate: "15deg" },
+              { text: "u*g*l*y", bottom: "12%", left: "5%", rotate: "10deg" },
+              { text: "l*o*s*e*r", bottom: "8%", right: "4%", rotate: "-8deg" },
+              { text: "f*o*o*l", top: "25%", left: "0%", rotate: "5deg" },
+              { text: "t*r*a*s*h", top: "20%", right: "0%", rotate: "-10deg" },
+              { text: "w*e*i*r*d", bottom: "45%", right: "2%", rotate: "6deg" },
+              { text: "j*e*r*k", bottom: "50%", left: "3%", rotate: "-4deg" },
+            ].map((word, i) => (
+              <span
+                key={i}
+                className="absolute text-xs md:text-sm font-mono px-2 py-1 rounded-md bg-destructive/10 border border-destructive/15 text-destructive/60"
+                style={{
+                  top: word.top,
+                  bottom: word.bottom,
+                  left: word.left,
+                  right: word.right,
+                  transform: `rotate(${word.rotate})`,
+                  opacity: 0.65,
+                }}
+              >
+                {word.text}
+              </span>
+            ))}
+          </div>
+
+          <div className="relative z-10 bg-card border border-border rounded-2xl p-6 md:p-8 shadow-glow">
           <Textarea
             value={text}
             onChange={(e) => setText(e.target.value)}
@@ -88,6 +120,7 @@ const AnalyzerSection = () => {
                 </>
               )}
             </Button>
+          </div>
           </div>
         </div>
 
