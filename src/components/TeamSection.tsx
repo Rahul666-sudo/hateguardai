@@ -3,7 +3,7 @@ const team = [
   { name: "Jishnu Prakash J", reg: "NCE25CS063" },
   { name: "Jennifer John", reg: "NCE25CS064" },
   { name: "Shamsiya Shamsudheen", reg: "NCE25CS102" },
-  { name: "Shahana K", reg: "NCE25CS101" },
+  { name: "Shahana KV", reg: "NCE25CS101" },
 ];
 
 const TeamSection = () => (
