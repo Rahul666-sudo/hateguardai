@@ -64,16 +64,28 @@ const AnalyzerSection = () => {
           {/* Background offensive words */}
           <div className="absolute inset-0 -m-6 pointer-events-none select-none overflow-hidden rounded-3xl" aria-hidden="true">
             {[
-              { text: "h*a*t*e", top: "5%", left: "2%", rotate: "-12deg" },
-              { text: "s*t*u*p*i*d", top: "8%", right: "3%", rotate: "8deg" },
-              { text: "i*d*i*o*t", bottom: "30%", left: "1%", rotate: "-6deg" },
-              { text: "d*u*m*b", top: "40%", right: "1%", rotate: "15deg" },
-              { text: "u*g*l*y", bottom: "12%", left: "5%", rotate: "10deg" },
-              { text: "l*o*s*e*r", bottom: "8%", right: "4%", rotate: "-8deg" },
-              { text: "f*o*o*l", top: "25%", left: "0%", rotate: "5deg" },
-              { text: "t*r*a*s*h", top: "20%", right: "0%", rotate: "-10deg" },
-              { text: "w*e*i*r*d", bottom: "45%", right: "2%", rotate: "6deg" },
-              { text: "j*e*r*k", bottom: "50%", left: "3%", rotate: "-4deg" },
+              // Top area
+              { text: "h*a*t*e", top: "-8%", left: "10%", rotate: "-12deg" },
+              { text: "s*t*u*p*i*d", top: "-5%", right: "15%", rotate: "8deg" },
+              { text: "m*o*r*o*n", top: "-3%", left: "45%", rotate: "3deg" },
+              // Top corners (overlapping)
+              { text: "f*o*o*l", top: "-2%", left: "-3%", rotate: "-18deg" },
+              { text: "t*r*a*s*h", top: "-4%", right: "-2%", rotate: "14deg" },
+              // Left side
+              { text: "i*d*i*o*t", top: "25%", left: "-4%", rotate: "-6deg" },
+              { text: "j*e*r*k", top: "50%", left: "-2%", rotate: "5deg" },
+              { text: "u*g*l*y", top: "70%", left: "-3%", rotate: "-10deg" },
+              // Right side
+              { text: "d*u*m*b", top: "20%", right: "-3%", rotate: "15deg" },
+              { text: "w*e*i*r*d", top: "45%", right: "-2%", rotate: "-7deg" },
+              { text: "l*o*s*e*r", top: "65%", right: "-4%", rotate: "9deg" },
+              // Bottom corners (overlapping)
+              { text: "c*r*e*e*p", bottom: "-4%", left: "-2%", rotate: "12deg" },
+              { text: "s*c*u*m", bottom: "-3%", right: "-3%", rotate: "-11deg" },
+              // Bottom area
+              { text: "l*a*m*e", bottom: "-6%", left: "20%", rotate: "7deg" },
+              { text: "g*r*o*s*s", bottom: "-8%", right: "18%", rotate: "-5deg" },
+              { text: "n*a*s*t*y", bottom: "-5%", left: "50%", rotate: "4deg" },
             ].map((word, i) => (
               <span
                 key={i}
