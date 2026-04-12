@@ -27,7 +27,7 @@ const HeroSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
           {[
-            { icon: Brain, title: "AI Classification", desc: "Advanced NLP-powered analysis" },
+            { icon: Brain, title: "AI Classification", desc: "Advanced NLP-powered analysis\nAI model is created using Google Colab" },
             { icon: Zap, title: "Real-time", desc: "Instant results in milliseconds" },
             { icon: Shield, title: "3-Tier Detection", desc: "Hate, offensive, or clean" },
           ].map((item) => (
