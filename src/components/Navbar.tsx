@@ -12,12 +12,20 @@ const Navbar = () => {
             HateGuard AI
           </span>
         </div>
-        <a
-          href="#analyzer"
-          className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
-        >
-          Try It Now →
-        </a>
+        <div className="flex items-center gap-4">
+          <a
+            href="#team"
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Team
+          </a>
+          <a
+            href="#analyzer"
+            className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+          >
+            Try It Now →
+          </a>
+        </div>
       </div>
     </nav>
   );
