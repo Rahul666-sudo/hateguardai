@@ -31,7 +31,7 @@ const HeroSection = () => {
             { icon: Zap, title: "Real-time", desc: "Instant results in milliseconds\nAI model is created using Google Colab" },
             { icon: Shield, title: "3-Tier Detection", desc: "Hate, offensive, or clean" },
           ].map((item) => (
-            <div key={item.title} className="flex flex-col items-center gap-3 p-6 rounded-xl bg-card/50 border border-border/50 backdrop-blur-sm">
+            <div key={item.title} className="flex flex-col items-center gap-3 p-6 rounded-xl bg-card/50 border border-border/50 backdrop-blur-sm text-center">
               <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
                 <item.icon className="w-5 h-5 text-primary-foreground" />
               </div>
