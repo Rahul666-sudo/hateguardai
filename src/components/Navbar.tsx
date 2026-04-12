@@ -17,7 +17,7 @@ const Navbar = () => {
             href="#analyzer"
             className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
           >
-            Try It Now →
+            Try It Now
           </a>
           <a
             href="#team"
