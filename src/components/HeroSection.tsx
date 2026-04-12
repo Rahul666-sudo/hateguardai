@@ -36,7 +36,7 @@ const HeroSection = () => {
                 <item.icon className="w-5 h-5 text-primary-foreground" />
               </div>
               <h3 className="font-semibold text-foreground">{item.title}</h3>
-              <p className="text-sm text-muted-foreground">{item.desc}</p>
+              <p className="text-sm text-muted-foreground whitespace-pre-line">{item.desc}</p>
             </div>
           ))}
         </div>
