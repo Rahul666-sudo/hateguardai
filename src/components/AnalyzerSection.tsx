@@ -64,16 +64,22 @@ const AnalyzerSection = () => {
           {/* Background offensive words */}
           <div className="absolute inset-0 -m-6 pointer-events-none select-none overflow-hidden rounded-3xl" aria-hidden="true">
             {[
-              { text: "h*a*t*e", top: "5%", left: "2%", rotate: "-12deg" },
-              { text: "s*t*u*p*i*d", top: "8%", right: "3%", rotate: "8deg" },
+              { text: "h*a*t*e", top: "2%", left: "2%", rotate: "-12deg" },
+              { text: "s*t*u*p*i*d", top: "5%", right: "3%", rotate: "8deg" },
               { text: "i*d*i*o*t", bottom: "30%", left: "1%", rotate: "-6deg" },
               { text: "d*u*m*b", top: "40%", right: "1%", rotate: "15deg" },
               { text: "u*g*l*y", bottom: "12%", left: "5%", rotate: "10deg" },
-              { text: "l*o*s*e*r", bottom: "8%", right: "4%", rotate: "-8deg" },
+              { text: "l*o*s*e*r", bottom: "5%", right: "4%", rotate: "-8deg" },
               { text: "f*o*o*l", top: "25%", left: "0%", rotate: "5deg" },
-              { text: "t*r*a*s*h", top: "20%", right: "0%", rotate: "-10deg" },
+              { text: "t*r*a*s*h", top: "18%", right: "0%", rotate: "-10deg" },
               { text: "w*e*i*r*d", bottom: "45%", right: "2%", rotate: "6deg" },
               { text: "j*e*r*k", bottom: "50%", left: "3%", rotate: "-4deg" },
+              { text: "s*c*u*m", top: "0%", left: "35%", rotate: "3deg" },
+              { text: "c*r*e*e*p", top: "10%", left: "15%", rotate: "-8deg" },
+              { text: "m*o*r*o*n", bottom: "0%", left: "30%", rotate: "7deg" },
+              { text: "l*a*m*e", bottom: "18%", right: "0%", rotate: "-5deg" },
+              { text: "p*u*n*k", top: "12%", left: "45%", rotate: "11deg" },
+              { text: "g*r*o*s*s", bottom: "2%", right: "30%", rotate: "-9deg" },
             ].map((word, i) => (
               <span
                 key={i}
