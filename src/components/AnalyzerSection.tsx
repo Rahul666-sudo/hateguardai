@@ -76,10 +76,10 @@ const AnalyzerSection = () => {
               { text: "j*e*r*k", bottom: "50%", left: "3%", rotate: "-4deg" },
               { text: "s*c*u*m", top: "1%", left: "35%", rotate: "3deg" },
               { text: "c*r*e*e*p", top: "13%", left: "15%", rotate: "-8deg" },
-              { text: "m*o*r*o*n", bottom: "0%", left: "18%", rotate: "7deg" },
+              { text: "m*o*r*o*n", bottom: "3%", left: "18%", rotate: "7deg" },
               { text: "l*a*m*e", bottom: "22%", right: "0%", rotate: "-5deg" },
               { text: "p*u*n*k", top: "12%", left: "50%", rotate: "11deg" },
-              { text: "g*r*o*s*s", bottom: "0%", right: "18%", rotate: "-9deg" },
+              { text: "g*r*o*s*s", bottom: "3%", right: "18%", rotate: "-9deg" },
             ].map((word, i) => (
               <span
                 key={i}
