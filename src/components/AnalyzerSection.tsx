@@ -74,7 +74,7 @@ const AnalyzerSection = () => {
               { text: "t*r*a*s*h", top: "18%", right: "0%", rotate: "-10deg" },
               { text: "w*e*i*r*d", bottom: "45%", right: "2%", rotate: "6deg" },
               { text: "j*e*r*k", bottom: "50%", left: "3%", rotate: "-4deg" },
-              { text: "s*c*u*m", top: "0%", left: "70%", rotate: "-5deg" },
+              { text: "s*c*u*m", top: "0%", left: "35%", rotate: "3deg" },
               { text: "c*r*e*e*p", top: "13%", left: "15%", rotate: "-8deg" },
               { text: "m*o*r*o*n", bottom: "0%", left: "8%", rotate: "7deg" },
               { text: "l*a*m*e", bottom: "22%", right: "0%", rotate: "-5deg" },
