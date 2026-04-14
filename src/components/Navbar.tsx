@@ -1,6 +1,34 @@
 import { Shield } from "lucide-react";
+import { useEffect, useState } from "react";
+
+const sections = [
+  { id: "analyzer", label: "Try It Now" },
+  { id: "team", label: "Team" },
+];
 
 const Navbar = () => {
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-40% 0px -50% 0px", threshold: 0 }
+    );
+
+    sections.forEach(({ id }) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50">
       <div className="container mx-auto max-w-5xl px-4 h-16 flex items-center justify-between">
@@ -13,18 +41,19 @@ const Navbar = () => {
           </span>
         </div>
         <div className="flex items-center gap-4">
-          <a
-            href="#analyzer"
-            className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
-          >
-            Try It Now
-          </a>
-          <a
-            href="#team"
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Team
-          </a>
+          {sections.map(({ id, label }) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              className={`text-sm font-medium transition-colors ${
+                activeSection === id
+                  ? "text-primary"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              {label}
+            </a>
+          ))}
         </div>
       </div>
     </nav>
