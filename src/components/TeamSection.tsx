@@ -1,9 +1,8 @@
 const team = [
+  { name: "N Kiran", reg: "NCE25CS090" },
+  { name: "Pranav P", reg: "NCE25CS091" },
+  { name: "Pavithra S", reg: "NCE25CS092" },
   { name: "Rahul Sunny", reg: "NCE25CS093" },
-  { name: "Jishnu Prakash J", reg: "NCE25CS063" },
-  { name: "Jennifer John", reg: "NCE25CS064" },
-  { name: "Shamsiya Shamsudheen", reg: "NCE25CS102" },
-  { name: "Shahana KV", reg: "NCE25CS101" },
 ];
 
 const TeamSection = () => (
