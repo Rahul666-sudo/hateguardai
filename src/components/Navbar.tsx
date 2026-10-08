@@ -1,5 +1,7 @@
 import { Shield } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useAuth } from "@/hooks/useAuth";
 
 const sections = [
   { id: "analyzer", label: "Try It Now" },
@@ -7,6 +9,7 @@ const sections = [
 ];
 
 const Navbar = () => {
+  const { user } = useAuth();
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
 
@@ -61,6 +64,12 @@ const Navbar = () => {
               {label}
             </a>
           ))}
+          <Link
+            to={user ? "/chat" : "/auth"}
+            className="text-sm font-medium px-3 py-1.5 rounded-lg bg-gradient-primary text-primary-foreground"
+          >
+            {user ? "Chat" : "Login"}
+          </Link>
         </div>
       </div>
     </nav>
