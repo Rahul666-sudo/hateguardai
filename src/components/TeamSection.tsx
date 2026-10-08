@@ -1,7 +1,7 @@
 const team = [
   { name: "N Kiran", reg: "NCE25CS090" },
-  { name: "Pranav P", reg: "NCE25CS091" },
-  { name: "Pavithra S", reg: "NCE25CS092" },
+  { name: "Pavithra S", reg: "NCE25CS091" },
+  { name: "Pranav P", reg: "NCE25CS092" },
   { name: "Rahul Sunny", reg: "NCE25CS093" },
 ];
 
